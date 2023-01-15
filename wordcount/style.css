@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+textarea {
+  background-color: #e07c24;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 1em;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+h1,
+h3 {
+  padding-left: 1em;
+}
+
+button {
+  display: block;
+  margin: 1em auto;
+  border: none;
+  padding: 0.25em 0.5em;
+  border-radius: 0.5em;
+}
