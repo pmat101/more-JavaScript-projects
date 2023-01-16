@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome check</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        gap: 1em;
+      }
+      input {
+        width: 50vw;
+        font-size: 1.4em;
+      }
+      button {
+        border: 1px solid #ddd;
+        background-color: #222;
+        color: #ddd;
+        padding: 0.25em 0.5em;
+        border-radius: 0.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Enter a string of text or numbers to check:</h2>
+    <input type="text" name="input" id="input" />
+    <button id="btn">Check</button>
+    <h3 id="output"></h3>
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        let input = document.getElementById("input").value;
+        let reverso = input.split("").reverse().join("");
+        // convert string to array, reverse it, then change it back to string
+
+        if (reverso == input)
+          document.getElementById(
+            "output"
+          ).innerText = `Wow! It is a Palindrome ${String.fromCodePoint(
+            0x1f60a
+          )}`;
+        else
+          document.getElementById(
+            "output"
+          ).innerText = `Sorry! it is not a Palindrome ${String.fromCodePoint(
+            0x1f614
+          )}`;
+        //   added emoji to string using ASCII convert method
+      });
+    </script>
+  </body>
+</html>
