@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy to Clipboard</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #222;
+        color: #ddd;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 90vh;
+      }
+      textarea {
+        background-color: #e07c24;
+        font-size: 1.4em;
+        border-radius: 1em;
+        padding: 1em;
+      }
+      button {
+        border: none;
+        padding: 0.25em 0.5em;
+        border-radius: 0.25em;
+        background-color: #0e9948;
+        color: #ddd;
+        font-size: 1.4em;
+        cursor: pointer;
+      }
+      button:active {
+        background-color: #1faa59;
+        color: #ccc;
+        padding: 0.1em 0.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ENTER TEXT TO COPY:</h2>
+    <textarea id="text" cols="42" rows="14"></textarea>
+    <button onclick="saveText()">Save</button>
+    <script>
+      let msg = document.createElement("h4");
+      msg.innerText = "Text copied";
+      msg.style.color = "#1B98F5";
+
+      function saveText() {
+        let input = document.getElementById("text");
+        navigator.clipboard.writeText(input.value); // copies text to clipboard
+        input.value = "";
+        document.body.appendChild(msg);
+        setTimeout(hide_msg, 2000);
+      }
+
+      function hide_msg() {
+        msg.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
