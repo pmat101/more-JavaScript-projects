@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Expense Tracker app</p>
+    </header>
+    <main>
+      <section id="list">
+        <h2>Payment History</h2>
+        <ul id="items"></ul>
+        <hr />
+        <p>
+          <span> Total Expenditure </span><span id="total"> &#8377; 0 </span>
+        </p>
+      </section>
+      <section id="form">
+        <h2>New Entry</h2>
+        <form>
+          <div>
+            <label
+              ><input type="radio" id="debit" name="type" checked />Debit</label
+            >
+            <label><input type="radio" id="credit" name="type" />Credit</label>
+          </div>
+          <div class="entry">
+            <input type="text" id="entry" placeholder="Item name" />
+            <input type="number" id="price" placeholder=" &#8377; " />
+          </div>
+          <button onclick="add()">Add</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>made by Pranav Mathur</p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

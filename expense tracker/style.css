@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 2.8em;
+  text-align: center;
+  background-color: #e07c24;
+  padding: 0.25em 0;
+}
+
+main {
+  display: flex;
+  gap: 1em;
+  margin: 1em;
+}
+
+#list {
+  flex: 2;
+}
+
+h2 {
+  text-align: center;
+}
+
+li,
+#list p {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4em;
+  margin: 0.5em 1em;
+}
+
+#form {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1em;
+  margin: 1em;
+}
+
+#entry,
+#price {
+  border: none;
+  border-bottom: 1px solid purple;
+  /* margin: 0 1em; */
+}
+
+form button {
+  border: none;
+  background-color: purple;
+  color: #fff;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  font-size: 1em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  color: #eee;
+  text-align: end;
+  padding: 0.25em 1em;
+}
