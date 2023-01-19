@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loadGame()">
+    <header>
+      <p>Game #<span id="game"></span></p>
+      <h1>Let's play a colour prediction game!</h1>
+      <p>Score = <span id="score"></span></p>
+    </header>
+    <main>
+      <section class="question">
+        <div id="colour1" class="box"></div>
+        <div class="text">+</div>
+        <div id="colour2" class="box"></div>
+        <div class="text">will make ?</div>
+      </section>
+      <section class="options">
+        <div id="a" class="box" onclick="selected('a')"></div>
+        <div class="text">or</div>
+        <div id="b" class="box" onclick="selected('b')"></div>
+        <div class="text">or</div>
+        <div id="c" class="box" onclick="selected('c')"></div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
