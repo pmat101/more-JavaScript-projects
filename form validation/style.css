@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./lines-dots-dark-illustration.jpeg") fixed center no-repeat;
+  background-size: cover;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+input {
+  font-size: 1.4em;
+  border: none;
+  background-color: #ddd;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+}
+
+input[type="button"] {
+  border-radius: 0.2em;
+  background-color: #ccc;
+}
