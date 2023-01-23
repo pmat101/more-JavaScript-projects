@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: #fff;
 }
+
 .top {
   display: flex;
   flex-direction: column;
@@ -14,12 +15,65 @@
   height: 50vh;
   background-color: #ff671f;
 }
+
+input {
+  border: none;
+  padding: 0.25em 0.5em;
+  border-radius: 0.5em;
+  color: #777;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  padding: 0.5em 1em;
+  background-color: #06038d;
+  font-weight: 600;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+button:active,
+.bottom a:active {
+  font-size: 1em;
+  padding: 0.25em 0.5em;
+}
+
 .bottom {
   background-color: #046a38;
   height: 50vh;
-}
-input {
-  border: 1px solid #06038d;
   padding: 0.5em 1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+@keyframes myMove {
+  0% {
+    transform: rotate(45deg);
+    transform-origin: top;
+  }
+  50% {
+    transform: rotate(-45deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: top;
+  }
+}
+
+#rotating {
+  animation: myMove 5s infinite;
+}
+
+.bottom a {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 0.5em 1em;
+  box-shadow: 0.25em 0.5em 1em #013705;
   border-radius: 0.5em;
+  cursor: pointer;
 }
