@@ -45,6 +45,7 @@ button:active,
   height: 50vh;
   padding: 0.5em 1em;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1em;
@@ -66,7 +67,7 @@ button:active,
 }
 
 #rotating {
-  animation: myMove 5s infinite;
+  animation: myMove 5s infinite; /*    Bookmark oscillation animation    */
 }
 
 .bottom a {
