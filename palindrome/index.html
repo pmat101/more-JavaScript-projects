@@ -41,10 +41,13 @@
     <script>
       document.getElementById("btn").addEventListener("click", function () {
         let input = document.getElementById("input").value;
-        let reverso = input.split("").reverse().join("");
-        // convert string to array, reverse it, then change it back to string
-
-        if (reverso == input)
+        let mark1 = input.split("");
+        for (let i = 0; i < mark1.length; i++) {
+          if (mark1[i] == " ") mark1.splice(i, 1);
+        }
+        if (
+          mark1.join("").toUpperCase() == mark1.reverse().join("").toUpperCase()
+        )
           document.getElementById(
             "output"
           ).innerText = `Wow! It is a Palindrome ${String.fromCodePoint(
@@ -56,7 +59,6 @@
           ).innerText = `Sorry! it is not a Palindrome ${String.fromCodePoint(
             0x1f614
           )}`;
-        //   added emoji to string using ASCII convert method
       });
     </script>
   </body>

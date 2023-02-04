@@ -1,9 +1,5 @@
 # PRANAV MATHUR
 
-![markup language](./images/markup-HTML-orange.svg)
-![style sheet language](./images/styling-CSS-blue.svg)
-![programming language](./images/programming-JavaScript-yellow.svg)
-
 ## 1. STOPWATCH
 
 ### Learnings from the project:
@@ -21,6 +17,27 @@
 
 ---
 
+## 2. PALINDROME
+
+### Learnings from the project:
+
+- Array and string functions like _split()_, _splice()_ _join()_ and _reverse()_
+
+### Time taken:
+
+    It took me an hour to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/palindrome2.png)
+![screencapture](./images/palindrome3.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
+
+![markup language](./images/markup-HTML-orange.svg)
+![style sheet language](./images/styling-CSS-blue.svg)
+![programming language](./images/programming-JavaScript-yellow.svg)
