@@ -3,7 +3,7 @@ let email = document.getElementById("email");
 let pswd = document.getElementById("pswd");
 let c_pswd = document.getElementById("c_pswd");
 const arr = [uname, email, pswd, c_pswd];
-let msg = document.createElement("p");
+let msg = document.createElement("h4");
 msg.style.color = "red";
 let flag = false;
 
@@ -43,7 +43,7 @@ document.getElementById("submit").addEventListener("click", function () {
   } else c_pswd.style.border = "none";
   for (let i of arr) i.value = "";
   msg.innerText = "Congrats! Your form is submitted."; // Final message
-  msg.style.color = "#ddd";
+  msg.style.color = "green";
   msg.style.fontSize = "1.4em";
   document.querySelector("form").appendChild(msg);
   setTimeout(disappear, 2000); // Disappears after 2 seconds
