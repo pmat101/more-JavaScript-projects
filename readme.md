@@ -34,7 +34,7 @@
 
 ---
 
-## 2. FORM VALIDATION
+## 3. FORM VALIDATION
 
 ### Learnings from the project:
 
@@ -48,6 +48,23 @@
 
 ![screencapture](./images/form1.png)
 ![screencapture](./images/form2.png)
+
+---
+
+## 4. COLOUR GAME
+
+### Learnings from the project:
+
+- Some more JavaScript problem solving techniques
+
+### Time taken:
+
+    It took me 4 hours to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/colour1.png)
+![screencapture](./images/colour2.png)
 
 ---
 
