@@ -68,6 +68,24 @@
 
 ---
 
+## 5. EXPENSE TRACKER
+
+### Learnings from the project:
+
+- Selecting DOM elements using their _attributes_
+- Manipulating data and inputs according to selected radio buttons
+
+### Time taken:
+
+    It took me 5 hours to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/expense1.png)
+![screencapture](./images/expense2.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
