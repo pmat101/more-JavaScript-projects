@@ -86,6 +86,24 @@
 
 ---
 
+## 6. BOOKMARK APP
+
+### Learnings from the project:
+
+- Using **Local Storage** to store user data
+- Local Storage methods like _setItem_, _getItem_ and _removeItem_
+- Adding animation to an element using _animation_, _@keyframes_ and _transform_
+
+### Time taken:
+
+    It took me 6 hours to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/bookmark.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
