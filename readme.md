@@ -104,6 +104,23 @@
 
 ---
 
+## 7. CLIPBOARD APP
+
+### Learnings from the project:
+
+- Copying selected text to clipboard using _navigator.clipboard.writeText(value)_
+
+### Time taken:
+
+    It took me an hour to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/clipboard1.png)
+![screencapture](./images/clipboard2.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
