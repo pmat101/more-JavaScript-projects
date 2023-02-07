@@ -121,6 +121,23 @@
 
 ---
 
+## 8. HEX CODE SELECTOR
+
+### Learnings from the project:
+
+- Applied all learnings from previous projects
+
+### Time taken:
+
+    It took me 2 hours to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/hex1.png)
+![screencapture](./images/hex2.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
