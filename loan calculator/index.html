@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="range" id="test1" min="0" max="10" />
+    <input type="number" id="test2" />
+    <script>
+      document.getElementById("test1").addEventListener("input", setValue);
+      function setValue() {
+        document.getElementById("test2").value =
+          document.getElementById("test1").value;
+      }
+    </script>
+  </body>
+</html>
