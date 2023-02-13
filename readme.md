@@ -138,6 +138,24 @@
 
 ---
 
+## 9. LOAN CALCULATOR
+
+### Learnings from the project:
+
+- Working with **input type="range"** and passing arguments through **onInput()** attribute
+- DOM methods like _nextElementSibling_, _previousElementSibling_ and _firstElementChild_ etc
+
+### Time taken:
+
+    It took me 4 hours to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/loan1.png)
+![screencapture](./images/loan2.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
