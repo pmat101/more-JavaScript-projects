@@ -1,21 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  height: 90vh;
 }
+
+h2,
+h3,
+h4 {
+  margin-bottom: 2em;
+  font-size: 1.5em;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+#result {
+  flex: 1;
+  height: 100%;
+  background-color: rgba(180, 22, 27, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#result h4 {
+  color: #005cc8;
+}
+
+#result h3 {
+  color: #b4161b;
+}
+
 .box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+label {
+  font-weight: 600;
+}
+
+article {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.violin div {
+  display: flex;
+  justify-content: space-between;
+}
+
 input[type="range"] {
   width: 50vw;
+}
+
+input[type="number"] {
+  font-size: 1.1em;
+}
+
+button {
+  border: none;
+  border-radius: 1em;
+  background-color: #b4161b;
+  color: #fff;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+button:active {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: 600;
 }
