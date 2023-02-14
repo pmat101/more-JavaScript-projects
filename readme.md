@@ -156,6 +156,23 @@
 
 ---
 
+## 10. THEME CHANGER
+
+### Learnings from the project:
+
+- Changing CSS values of elements using JavaScript
+
+### Time taken:
+
+    It took me 1.5 hours to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/theme1.png)
+![screencapture](./images/theme2.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
