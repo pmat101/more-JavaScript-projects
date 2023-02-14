@@ -8,14 +8,9 @@
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  background-color: #bbb;
-}
-
 nav {
   position: sticky;
   top: 0;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,18 +21,16 @@ nav span {
   font-size: 1.1em;
 }
 
-.button {
-  background-color: #ddd;
+.sack {
   border-radius: 1em;
+  cursor: pointer;
 }
 
 .ball {
-  background-color: #999;
   height: 2em;
   width: 2em;
   border-radius: 50%;
   margin-right: 2em;
-  cursor: pointer;
 }
 
 header {
@@ -50,6 +43,7 @@ main {
   justify-content: space-around;
   margin: 0 2em;
   gap: 2em;
+  text-align: justify;
 }
 
 section {
@@ -61,14 +55,9 @@ aside {
   padding: 1em;
 }
 
-hr {
-  border: 1px solid #000;
-}
-
 footer {
   position: sticky;
   bottom: 0;
-  background-color: #ddd;
   padding: 0.5em;
   text-align: end;
   font-weight: 500;

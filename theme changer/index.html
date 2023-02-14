@@ -10,7 +10,7 @@
   <body>
     <nav>
       <h3>Change theme using the switch right there <span> &#10145;</span></h3>
-      <div class="button">
+      <div class="sack" id="light">
         <div class="ball"></div>
       </div>
     </nav>
@@ -190,12 +190,6 @@
     <footer>
       <p>&copy; 2023 All rights reserved by Pranav Mathur</p>
     </footer>
-    <script>
-      let ball = document.querySelector("nav .ball");
-      ball.addEventListener("click", function () {
-        ball.style.marginRight = "0";
-        ball.style.marginLeft = "2em";
-      });
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
