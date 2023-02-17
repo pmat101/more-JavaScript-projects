@@ -1,22 +1,21 @@
-const imG = document.querySelector("img");
+const imgs = document.querySelectorAll("img");
 
-imG.addEventListener("click", function () {
-  imG.setAttribute("id", "animate"); // Start animation
-  setTimeout(changeImg, 1000);
-});
+const pokedex = ["001", "004", "007", "023", "025", "039", "095", "150"];
+const pokedex2 = pokedex.concat(pokedex);
+const jumble = [];
+for (let i = 0; i < pokedex.length * 2; i++) {
+  let random = Math.floor(Math.random() * pokedex2.length);
+  jumble.push(pokedex2[random]); // Get Pokemon pair in random positions
+  pokedex2.splice(random, 1);
+}
 
-const changeImg = () => {
-  if (imG.getAttribute("class") == "1") {
-    imG.setAttribute("src", "./img/001.png");
-    setTimeout(remAni, 1000);
-    imG.setAttribute("class", "2");
-  } else {
-    imG.setAttribute("src", "./img/gettyimages-157772536-2048x2048.jpg");
-    setTimeout(remAni, 1000);
-    imG.setAttribute("class", "1");
-  }
-};
-
-const remAni = () => {
-  imG.removeAttribute("id", "animate"); // Stop animation so we can start again on click
+const turn = (id) => {
+  let current = document.getElementById(id);
+  current.setAttribute("id", "animate");
+  setTimeout(function () {
+    current.setAttribute("src", `./img/${jumble[id]}.png`);
+  }, 1000);
+  setTimeout(function () {
+    current.removeAttribute("id", "animate");
+  }, 2000);
 };

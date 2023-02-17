@@ -14,13 +14,25 @@ body {
   align-items: center;
 }
 
+header {
+  margin: 2em 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1em;
+}
+
 .card {
-  height: 25em;
-  width: 17em;
+  height: 12em;
+  width: 8em;
+  display: flex;
+  align-items: center;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 @keyframes rotate {
