@@ -9,13 +9,23 @@ for (let i = 0; i < pokedex.length * 2; i++) {
   pokedex2.splice(random, 1);
 }
 
+let current1, current2;
+
 const turn = (id) => {
-  let current = document.getElementById(id);
-  current.setAttribute("id", "animate");
+  if (current1 == undefined) assign(current1, id);
+  else if (current2 == undefined) assign(current2, id);
+  else revert(current1, current2);
+};
+
+const assign = (param, id) => {
+  param = document.getElementById(id);
+  param.setAttribute("id", "animate");
   setTimeout(function () {
-    current.setAttribute("src", `./img/${jumble[id]}.png`);
+    param.setAttribute("src", `./img/${jumble[id]}.png`);
   }, 1000);
   setTimeout(function () {
-    current.removeAttribute("id", "animate");
+    param.removeAttribute("id", "animate");
   }, 2000);
 };
+
+const revert = (param, id) => {};
