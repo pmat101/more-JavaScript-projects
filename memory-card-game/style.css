@@ -47,7 +47,7 @@ img {
   }
 }
 
-#animate {
+.animate {
   animation-name: rotate;
   animation-duration: 2s;
 }
