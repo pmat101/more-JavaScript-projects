@@ -7,7 +7,7 @@ let current1, current2, score, tries;
 function reset() {
   for (i of pokedex) {
     pokedex2.push(i);
-    pokedex2.push(i);
+    pokedex2.push(i); // Adding same image twice so that it can be matched
   }
   for (let i = 0; i < pokedex.length * 2; i++) {
     let random = Math.floor(Math.random() * pokedex2.length);

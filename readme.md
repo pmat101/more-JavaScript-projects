@@ -173,6 +173,24 @@
 
 ---
 
+## 11. MEMORY CARD GAME
+
+### Learnings from the project:
+
+- Performing CSS **animations** using _transitions_ and _keyframes_ etc
+- Dealing with each element of a game and running it on a loop
+
+### Time taken:
+
+    It took me 3 days to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/game1.png)
+![screencapture](./images/game2.png)
+
+---
+
 ## Live link:
 
 [Go to site](https://more-javascript-projects.netlify.app/)
