@@ -40,8 +40,10 @@ main {
   align-items: center;
 }
 
-img {
+img,
+h3 {
   max-width: 100%;
+  cursor: pointer;
 }
 
 @keyframes rotate {
@@ -59,4 +61,39 @@ img {
 .animate {
   animation-name: rotate;
   animation-duration: 1s;
+}
+
+footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  animation-name: scale;
+  animation-duration: 1s;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -1,17 +1,23 @@
 const imgs = document.querySelectorAll("img");
-
 const pokedex = ["001", "004", "007", "023", "025", "039", "095", "150"];
-const pokedex2 = pokedex.concat(pokedex);
+const pokedex2 = [];
 const jumble = [];
-for (let i = 0; i < pokedex.length * 2; i++) {
-  let random = Math.floor(Math.random() * pokedex2.length);
-  jumble.push(pokedex2[random]); // Get Pokemon pair in random positions
-  pokedex2.splice(random, 1);
-}
+let current1, current2, score, tries;
 
-let current1, current2;
-let score = 0;
-let tries = 0;
+function reset() {
+  for (i of pokedex) {
+    pokedex2.push(i);
+    pokedex2.push(i);
+  }
+  for (let i = 0; i < pokedex.length * 2; i++) {
+    let random = Math.floor(Math.random() * pokedex2.length);
+    jumble.push(pokedex2[random]);
+    pokedex2.splice(random, 1); // Get Pokemon pair in random positions
+  }
+  score = 0;
+  tries = 0;
+}
+reset();
 
 const turn = (id) => {
   if (current1 == undefined) current1 = assign(id);
@@ -60,7 +66,27 @@ const match = () => {
     }, 3000);
   }
   if (score >= 8) {
-    let main = document.querySelector("main");
-    main.style.opacity = 0.1;
+    document.querySelector("header").style.opacity = 0.1;
+    document.querySelector("main").style.opacity = 0.1;
+    document.querySelector(
+      "footer h2"
+    ).innerText = `Congratulations! You've completed the game. It took ${tries} tries..`;
+    document.querySelector("footer").style.display = "flex";
+    jumble.splice(0, jumble.length - 1);
   }
 };
+
+document.querySelector("footer h3").addEventListener("click", function () {
+  document.querySelector("header").style.opacity = 1;
+  document.querySelector("main").style.opacity = 1;
+  document.querySelector("footer").style.display = "none";
+  reset();
+  for (i of imgs)
+    i.setAttribute("src", "./img/gettyimages-157772536-2048x2048.jpg");
+  current1 = undefined;
+  current2 = undefined;
+  score = 0;
+  tries = 0;
+  document.getElementById("score").innerText = score;
+  document.getElementById("try").innerText = tries;
+});
