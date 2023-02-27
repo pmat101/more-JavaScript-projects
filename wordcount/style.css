@@ -19,20 +19,28 @@ textarea {
   background-color: #e07c24;
   font-size: 1.4em;
   border: none;
-  border-radius: 1em;
+  border-radius: 0.25em;
   margin: 1em 0;
   padding: 1em;
 }
 
-h1,
-h3 {
-  padding-left: 1em;
+h1 {
+  text-align: center;
 }
 
 button {
   display: block;
   margin: 1em auto;
   border: none;
-  padding: 0.25em 0.5em;
+  box-shadow: 0.1em 0.1em 1em 0.1em #777;
+  padding: 0.5em 1em;
   border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:active {
+  padding: 0.3em 0.8em;
+  font-size: 1.1em;
+  box-shadow: none;
 }
