@@ -17,7 +17,24 @@
 
 ---
 
-## 2. PALINDROME
+## 2. WORD COUNT APP
+
+### Learnings from the project:
+
+- Some more JavaScript problem solving techniques
+
+### Time taken:
+
+    It took me an hour and a half to complete this project.
+
+### Screenshots:
+
+![screencapture](./images/wordcount2.png)
+![screencapture](./images/wordcount3.png)
+
+---
+
+## 3. PALINDROME
 
 ### Learnings from the project:
 
@@ -34,7 +51,7 @@
 
 ---
 
-## 3. FORM VALIDATION
+## 4. FORM VALIDATION
 
 ### Learnings from the project:
 
@@ -51,7 +68,7 @@
 
 ---
 
-## 4. COLOUR GAME
+## 5. COLOUR GAME
 
 ### Learnings from the project:
 
@@ -68,7 +85,7 @@
 
 ---
 
-## 5. EXPENSE TRACKER
+## 6. EXPENSE TRACKER
 
 ### Learnings from the project:
 
@@ -86,7 +103,7 @@
 
 ---
 
-## 6. BOOKMARK APP
+## 7. BOOKMARK APP
 
 ### Learnings from the project:
 
@@ -104,7 +121,7 @@
 
 ---
 
-## 7. CLIPBOARD APP
+## 8. CLIPBOARD APP
 
 ### Learnings from the project:
 
@@ -121,7 +138,7 @@
 
 ---
 
-## 8. HEX CODE SELECTOR
+## 9. HEX CODE SELECTOR
 
 ### Learnings from the project:
 
@@ -138,7 +155,7 @@
 
 ---
 
-## 9. LOAN CALCULATOR
+## 10. LOAN CALCULATOR
 
 ### Learnings from the project:
 
@@ -156,7 +173,7 @@
 
 ---
 
-## 10. THEME CHANGER
+## 11. THEME CHANGER
 
 ### Learnings from the project:
 
@@ -173,7 +190,7 @@
 
 ---
 
-## 11. MEMORY CARD GAME
+## 12. MEMORY CARD GAME
 
 ### Learnings from the project:
 
